@@ -126,9 +126,9 @@ function Question_forms() {
             return result;
             
         }; */
-        const demo =() =>{
-         return  <h2>rajvi</h2> 
-        }
+        /* const demo =() =>{
+            return  <h2>rajvi</h2> 
+        } */
     const questionsUI = () => {
         return questions.map((ques, i) => (
             <div>
@@ -240,7 +240,8 @@ return (
                     <input type='text' className='question_from_top_desc' placeholder='From description' />
 
                 </div>
-                {demo()}
+               {/*  {demo()}
+                */} 
                 {questionsUI()}
             </div>
         </div>
