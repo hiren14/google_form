@@ -1,0 +1,8 @@
+.list_item{
+    margin-right: 10px;
+}
+.list_item:hover{
+    background-color: aliceblue;
+    border-radius: 0.5rem .2rem;
+    color: black;
+}

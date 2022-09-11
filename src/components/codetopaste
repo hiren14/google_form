@@ -1,0 +1,73 @@
+         <div>
+                    <Accordion expanded={questions[i].open} className={questions[i].open ? 'add border' : ""}>
+                        <AccordionSummary aria-controls='panel1a-content' id='panel1a-header' elevation={1} style={{ width: "100%" }}>
+                          
+                        </AccordionSummary>
+                        <div className='question_box'>
+                            <AccordionDetails className='add_question'>
+                                <div className='add_question_top'>
+                                    {/* add the on change event */}
+                                    <input type='text' className='question' placeholder='Question' value={ques.questionsText} onChange={(e) => { changeQuestion(e.target.value, i) }}></input>
+                                    <CropOriginal />
+                                    <Select className='question'>
+                                        <MenuItem id='text' value='text' onClick={() => { addQuestionType(i, "text") }}>
+                                            <Subject /> Paragraph
+                                        </MenuItem>
+
+                                        <MenuItem id='checkbox' value='Checkbox' onClick={() => { addQuestionType(i, "checkBox") }} ><CheckBox checked /> Checkbox
+                                        </MenuItem>
+                                        <MenuItem id='radio' value='Radio' onClick={() => { addQuestionType(i, "radio") }}><Radio checked />Multiple Choice
+                                        </MenuItem>
+
+                                    </Select>
+                                    {ques.options.map((op, j) => (
+                                        <div className='add_question_body' key={j}>
+                                            {
+                                                (ques.questionsType != 'text') ?
+                                                    <input type={ques.questionType} /> :
+                                                    <ShortText />
+
+                                            }
+                                            <div>
+                                                <input type='text' className='text_input' placeholder='option' value={ques.options[j].optionText}>
+                                                </input>
+                                                <CropOriginal>
+                                                    <IconButton >
+                                                        <Close >
+                                                        </Close>
+
+                                                    </IconButton>
+                                                </CropOriginal>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                                {/* */}
+                                <div className='add_footer'>
+                                    <div className='add_question_bottom_left'>
+                                        <Button size='small' style={{ textTransform: 'none', color: '#4285f4', fontSize: '13px', fontWeight: '600' }}>
+                                            <FcRightUp style={{ border: '2px soild #4285f4', padding: '2px', marginRight: '8px' }} />Amswer key</Button>
+                                    </div>
+                                    <div className='add_question_bottom'>
+                                        <IconButton aria-label='Copy' onClick={(() => { copyQuestion(i) })}>
+                                            <FilterNone />
+
+                                        </IconButton>
+                                        <IconButton aria-label='delete' onClick={() => { deleteQuestion(i) }} >
+                                            <BsTrash />
+                                        </IconButton>
+                                        <span style={{ color: '#5f6368', fontSize: '13px' }}>Required</span><Switch onClick={() => { requiredQuestion(i) }} ></Switch>
+                                    </div>
+                                </div>
+                            </AccordionDetails>
+                            {/* option to add and remove elements */}
+                            <div className='question_edit'>
+                                <AddCircleOutline className='edit' />
+                                <CropOriginal className='edit' />
+                                <VideoLibrary className='edit' />
+                                <TextFields className='edit' />
+                            </div>
+                        </div>
+                    </Accordion>
+                </div >
+       

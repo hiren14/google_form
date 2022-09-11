@@ -1,0 +1,48 @@
+.template_section{
+    background-color: #f4f4f9;
+    padding-bottom: .2rem;
+    padding-top: .1rem;
+}
+.template_top{
+    margin-left: .2rem;
+    margin-right: .2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.template_right{
+    display: flex;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    margin-right: .2rem;
+}
+.gallery_button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    font-size: 14px;
+}
+.card{
+    margin-left: .2rem;
+    margin-top: 0.2rem;
+    margin-right: .2rem;
+}
+.card_image{
+    box-sizing: border-box;
+    height: 12vh;
+    width: 14vw;
+    cursor:pointer;
+    border: radius 0.1rem solid #fffdf7 ;
+}
+.card_image:hover{
+    border: 0.2rem solid #15e8a5;
+}
+.card_title{
+    font-size:small;
+    margin-top: .25rem;
+        color: black;
+        
+}

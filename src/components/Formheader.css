@@ -1,0 +1,18 @@
+.form_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.form_header_left{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form_name{
+        border: none;
+        outline: none;
+        font-size: small;
+        color:black ;
+
+}
