@@ -42,12 +42,12 @@ function Template() {
                     </div>
 
                 </div>
-                <div className='card'>
+                {/* <div className='card'>
                     <img src={img} alt="blank" className='card_image' />
                     <p className='card_title'>party</p>
-                </div>
-                <div className='card'>
-                    <img src={img} alt="blank" className='card_image' />
+    </div>*/}
+                <div className='card'> 
+                    <img src={img1} alt="blank" className='card_image' />
                     <p className='card_title'>contact</p>
 
 
