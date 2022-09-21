@@ -3,7 +3,8 @@ import { IconButton } from "@material-ui/core";
 import UnFoldMoreIcon from '@material-ui/icons/UnfoldMore';
 import uuid from 'react-uuid';
 import './Template.css';
-import img from "../un.jpg";
+import img from "../../plus.png";
+import img1 from "../../contact.png";
 import { useNavigate } from 'react-router-dom'
 function Template() {
     let navigate = useNavigate();
@@ -41,11 +42,11 @@ function Template() {
 
                 </div>
                 <div className='card'>
-                    <img src={img} alt="blank" className='card_image' />
+                    <img src={img1} alt="blank" className='card_image' />
                     <p className='card_title'>party</p>
                 </div>
                 <div className='card'>
-                    <img src={img} alt="blank" className='card_image' />
+                    <img src={img1} alt="blank" className='card_image' />
                     <p className='card_title'>contact</p>
 
 
