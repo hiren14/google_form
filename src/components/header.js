@@ -5,6 +5,7 @@ import { IconButton } from "@material-ui/core";
 //import formimg from "./";
 import SearchIcon from '@material-ui/icons/Search';
 import AppsIcon from '@material-ui/icons/Apps';
+import formimage from "./images/download.png"
 import Avatar from '@material-ui/core/Avatar'
 import TempDrawer from './TempDrawer'
 import { Height } from "@material-ui/icons";
@@ -15,9 +16,9 @@ function Header() {
 
 
       <div className="header_info">
-        <img src={'/'} style={{ height: "40px", width: "40px" }} className="form_img" />
+        <img src={formimage} style={{ height: "40px", width: "55px" }} className="form_img" />
         <div className="info">
-          Forms
+          Jan Suvidha Portal
         </div>
         <TempDrawer />
 

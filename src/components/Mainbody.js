@@ -34,15 +34,14 @@ function Mainbody(){
 
                     </h5>
           
-            </div>
+                </div>
                     <div className="doc_content">
                         <div className="content_left">
-    <StorageIcon style={{fontSize:"12px",color:"white",background:"#6E2594",padding:"3px",marginRight:"2px",border:"2px"}}/>
-   
+                            <StorageIcon style={{fontSize:"12px",color:"white",background:"#6E2594",padding:"3px",marginRight:"2px",border:"2px"}}/>
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
         </div>
         
     )
