@@ -1,10 +1,11 @@
 import React from 'react'
-import FolderOpenIcon  from "@material-ui/icons/FolderOpen";
 import StorageIcon  from "@material-ui/icons/Storage";
+import ArrowDropDownwardIcon  from "@material-ui/icons/ArrowDropDown";
+import FolderOpenIcon  from "@material-ui/icons/FolderOpen";
 import {IconButton} from '@material-ui/core';
-import formimage from "./images/react.png"
+import doc_image from "./images/react.png"
+import MoreVertIcon from '@material-ui/icons/More';
 import './Mainbody.css';
-import ArrowDropDownwardIcon  from "@material-ui/icons/ArrowDownwardSharp";
 
 function Mainbody(){
     return(
@@ -14,38 +15,33 @@ function Mainbody(){
                     Recent forms                                        
                 </div>
                 <div className="mainbody_top_right">
-                <div className="mainbody_top_center" style={{fontSize:"14px",marginRight:"125px"}}> Owned
+                <div className="mainbody_top_center" style={{fontSize:"14px",marginRight:"125px"}}> Owned by anyone <ArrowDropDownwardIcon/><ArrowDropDownwardIcon></ArrowDropDownwardIcon></div>
                     <IconButton>
                         <StorageIcon style={{fontSize:"16px",color:"black"}}/>
-
                     </IconButton> 
-                        <IconButton>
-                            <FolderOpenIcon style={{fontSize:"16px",color:"black"}} />
-
-                        </IconButton>   
-                </div>
+                    <IconButton>
+                        <FolderOpenIcon style={{fontSize:"16px",color:"black"}} />
+                    </IconButton>   
                 
-            </div>
-            
-            <div className="mainbody_docs">
-                {/* <div className="mainbody_docs"> */}
-                <div className="doc_card">
-                <img src={formimage} className='doc_img'/>
-                    <div className="doc_card_content">
-                    <h5></h5>
-            <div className="doc_content">
-                                <div className="content_left">
-
                 </div>
-                              
             </div>
-                        <StorageIcon style={{fontSize:"12px",color:"white",background:"#6E2594",padding:"3px",marginRight:"2px",border:"2px"}}/>
-   
+            <div className="mainbody_docs">
+                <div className="doc_card">
+                    <img src={doc_image} className='doc_image'/>
+                    <div className="doc_card_content">
+                        <h5></h5>
+                        <div className="doc_content" style={{fontSize:'12px',color:"grey"}}>
+                            <div className="content_left">
+                                <StorageIcon style={{fontSize:"12px",color:"white",background:"#6E2594",padding:"3px",marginRight:"2px",border:"2px"}}/>
+                            </div>
+                            <MoreVertIcon style={{fontSize:"16px",color:"grey"}}/>
                         </div>
                     </div>
                 </div>
-                </div>
-        </div>
+            </div>
+       </div>
+     
+        
     )
 }
 export default Mainbody

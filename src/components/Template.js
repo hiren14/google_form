@@ -4,9 +4,10 @@ import UnFoldMoreIcon from '@material-ui/icons/UnfoldMore';
 import uuid from 'react-uuid';
 import './Template.css';
 import img from "../components/plus.png";
-
-import img1 from "../components/contact.png";
+import edu_dep from "../components/images/edu.png"
+import agr_dep from '../components/images/agr.png'
 import { useNavigate } from 'react-router-dom'
+
 function Template() {
     let navigate = useNavigate();
     const createFrom = () => {
@@ -26,35 +27,37 @@ function Template() {
                 <div className="template_right">
                     <div className="gallery_button">
                         Template gallery
-                        <UnFoldMoreIcon />
+                        <UnFoldMoreIcon fontSize="small"/>
 
                     </div>
                     <IconButton>
-                        <MoreVectIcon />
+                        <MoreVectIcon fontSize="small"/>
                     </IconButton>
                 </div>
-
-                {/* error is to slove card */}
+            </div>
+                
                 <div className='templete_body'>
                     <div className='card' onClick={createFrom}>
-                        <img src={img} alt="blank" className='card_image' />
+                        <img src={img} alt="no image" className='card_image' />
                         <p className='card_title'>Blank</p>
                     </div>
-
+                    <div className="card" onClick={createFrom}>
+                        <img src={edu_dep} alt="no image" className='card_image'/>
+                        <p className='card_title'>Educational Depratment</p>
+                    </div>
+                    <div className="card">
+                        <img src={agr_dep} alt="no image" className='card_image'/>
+                        <p className='card_title'>Agriculture Department</p>
+                    </div>
                 </div>
+
                 {/* <div className='card'>
                     <img src={img} alt="blank" className='card_image' />
                     <p className='card_title'>party</p>
     </div>*/}
-                <div className='card'> 
-                    <img src={img1} alt="blank" className='card_image' />
-                    <p className='card_title'>contact</p>
-
-
-                </div>
 
             </div>
-        </div>
+        
 
     )
 }
