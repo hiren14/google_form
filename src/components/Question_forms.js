@@ -31,18 +31,18 @@ function Question_forms() {
 
     const [questions, setQuestions] = useState(
         [{
-            questionsText: 'Which is capital of gujrat?',
+            questionsText: 'Gender',
             questionsType: 'radio',
             options: [
-                { optionsText: 'Bengaluru' },
-                { optionsText: 'Surat' },
-                { optionsText: 'Ahmedabad' },
-                { optionsText: 'Gandhinagar' }
+                { optionsText: 'Male' },
+                { optionsText: 'Female' },
+                { optionsText: 'Other' },
             ],
             open: true,
             required: false
         }]
     )
+    
     function changeQuestion(text, i) {
         var newQuestion = [...questions];
         newQuestion[i].questionsText = text;

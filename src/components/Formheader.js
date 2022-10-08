@@ -10,10 +10,10 @@ function Formheader() {
         <div className="form_header">
             <div className="form_header_left">
                 <img src={'./'} style={{height:"45px",width:"40px"}} />
-            <input type="text" placeholder="Untitled form" className="form_name"  />
+            <input style={{fontSize:"40px",fontWeight:"600"}}type="text" placeholder="Untitled form" className="form_name" />
         </div>
 <FiStar className='form_header_icon' style={{marginRight:'10px'}}/>
-<span style={{fontSize:"12px",fontWeight:"600"}}> All Changes saved in Cloud 
+<span style={{fontSize:"14px",fontWeight:"600"}}> All Changes saved in Cloud 
 </span>
 
 </div >

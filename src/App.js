@@ -1,5 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
+import Template from "./components/Template"
+import logo from './logo.svg';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 import Formheader from './components/Formheader'
